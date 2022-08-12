@@ -9,3 +9,6 @@ Note - RFD for G23 device is missing internal verify function to check if all bi
        Absent this capability, inconsistent and weak data caused by asychronous reset during a write
        command cannot be detected.  This capability was provided for all (Std/T01, Tiny/T02, Pico/T04) RL78 FDL
        libraries.
+       
+Note - RFD for G23 API functions for Write/Erase do not provide bounds checking on function arguments.  Incorrect 
+       data passed to these functions could have side effects that impact the integrity of the contents of the data-flash.
